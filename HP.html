@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike2</title>
+    <link rel="stylesheet" href="./CSS.css">
 </head>
 <body>
 <header>
@@ -23,16 +24,20 @@
 </header>
 
 <main>
-    <div class="slogan">
-        <h1>鍛えた技術で、唯一無二の一台を</h1>
-        <h2>バイクの修理とカスタムを専門とするチーム</h2>
+    <div class="mainWords">
+        <p>
+            鍛えた<span class="highlight">技術で</span>、<br/>
+            <span class="highlight">唯一無二</span>の一台を
+        </p>
+        <p class="wordsAboutTeam">バイクの修理とカスタムを専門とするチーム</p>
         <a href="">ご相談</a>
     </div>
 </main>
 
 <section>
     <h1>私たちについて</h1>
-    <p>KuroSteelは、その名が示す「黒い鋼」のように、強さ・信頼性・美しさを兼ね備えた
+    <p class="sectionDescription">
+        <span class="highlight">KuroSteel</span>は、その名が示す「黒い鋼」のように、強さ・信頼性・美しさを兼ね備えた
         バイクづくりを理念としています。修理、カスタム、そして正確な診断を通じて、
         車両本来の性能を引き出しながら、お客様の目的や使用環境に最適な一台を提供します。
         外観だけでなく内部構造まで丁寧に対応し、安心して長く乗れる品質を追求しています。
@@ -41,27 +46,35 @@
 
 <section>
     <h1>特徴</h1>
-    <img src="./">
-    <h3>完全オーダーメイド対応</h3>
-    <p>
-        カスタムはすべてオーナーとの対話から始まり、希望や
-        こだわりを丁寧に形にします。細部までパーソナライズ
-        された一台を追求します。
-    </p>
-    
-    <img src="./">
-    <h3>安心のアフターサポート</h3>
-    <p>
-        納車後も、メンテナンスや調整、追加カスタムまでしっかり
-        サポート。長く付き合えるパートナーとして信頼を築きます。
-    </p>
+    <div class="features">
+        <div class="gridItemIcon1"><img class="featureIcon" src="./feature1.png" alt="icon1"></div>
+        <div class="gridItem">
+            <h3>完全オーダーメイド対応</h3>
+            <p>
+                カスタムはすべてオーナーとの対話から始まり、希望や
+                こだわりを丁寧に形にします。細部までパーソナライズ
+                された一台を追求します。
+            </p>
+        </div>
 
-    <img src="./">
-    <h3>確かな診断力と修理技術</h3>
-    <p>
-        豊富な経験と専門知識を活かし、車種や年式を問わず的確な診断と丁寧な
-        修理を行います。見えない不調も逃さず、安心して乗れる状態に仕上げます。
-    </p>
+        <div class="gridItem">
+            <h3>安心のアフターサポート</h3>
+            <p>
+                納車後も、メンテナンスや調整、追加カスタムまでしっかり
+                サポート。長く付き合えるパートナーとして信頼を築きます。
+            </p>
+        </div>
+        <div class="gridItemIcon2"><img src="./" alt="icon2"></div>
+
+        <div class="gridItemIcon3"><img src="./" alt="icon3"></div>
+        <div class="gridItem">
+            <h3>確かな診断力と修理技術</h3>
+            <p>
+                豊富な経験と専門知識を活かし、車種や年式を問わず的確な診断と丁寧な
+                修理を行います。見えない不調も逃さず、安心して乗れる状態に仕上げます。
+            </p>
+        </div>
+    </div>
 </section>
 
 <section>
@@ -81,8 +94,8 @@
 
 <section>
     <h1>修理</h1>
-    <p>
-        エンジン、電装系、ブレーキ、サスペンションなど、
+    <p class="sectionDescription">
+        <span class="highlight">エンジン、電装系、ブレーキ、サスペンションなど、</span><br/>
         問題のある箇所を正確に対応し、安全な走行を回復させます。
     </p>
 
@@ -131,7 +144,7 @@
             応じて調整、交換を行います。安全性、快適性、耐久性を維持するため定期的なフルメンテナンスを
             おすすめします。
         </p>
-        <h2>定期点検パック 6ヶ月〜12ヶ月</h2>
+        <h3>定期点検パック 6ヶ月〜12ヶ月</h3>
         <p>¥8,000〜¥18,000</p>
         <a href="#pricelist">詳しくはこちら</a>
     </div>
@@ -143,12 +156,12 @@
 
 <section>
     <h1>カスタム</h1>
-    <p>
-        細かなパーツで個性を引き立てたい方も、バイクのスタイルを一新したい方も、私たちにお任せください。
-        ライトやカラーリングの変更から、フルカスタムまで、お客様の理想を形にします。あなただけの一台を、
-        プロの技術と丁寧な仕上がりで実現いたします。
+    <p class="sectionDescription">
+        細かなパーツで個性を引き立てたい方も、バイクのスタイルを一新したい方も、<br/>
+        私たちにお任せください。 <span class="highlight">ライトやカラーリングの変更から、フルカスタムまで、</span>お客様の理想<br/>
+        を形にします。あなただけの一台を、プロの技術と丁寧な仕上がりで実現いたします。
     </p>
-    <button type="customExampleNavy">before</button>
+    <button type="button">before</button>
     <div class="compare">
         <p>作業の例</p>
         <section class="before">
@@ -159,14 +172,14 @@
         </section>
         <input type="range" id="range">
     </div>
-    <button type="customExampleNavy">after</button>
+    <button type="button">after</button>
     <a href="#googleform">ご相談のご予約</a>
     <a href="#pricelist">詳しくはこちら</a>
 </section>
 
 <section>
     <h1>支払方法</h1>
-    <p>すべてのお支払方法をご利用いただけます。</p>
+    <p class="sectionDescription"><span class="highlight">すべて</span>のお支払方法をご利用いただけます。</p>
     <div>
         <img src="" alt="">
         <img src="" alt="">
@@ -188,8 +201,8 @@
 
 <section>
     <h1>お問い合わせ</h1>
-    <p>
-        お急ぎの方は下記の電話番号からご連絡ください。
+    <p class="sectionDescription">
+        お急ぎの方は下記の電話番号からご連絡ください。<br/>
         営業時間 10:00〜19:00 月曜定休
     </p>
     <h3>080-0123-4567</h3>
@@ -218,7 +231,7 @@
 <footer>
     <div>
         <a href=""><img src="./" alt="line" ></a>
-        <a href=""><img src="./" alt="tiktok" ></a>
+        <a href=""><img src="./" alt="facebook" ></a>
         <a href=""><img src="./" alt="insta" ></a>
     </div>
     <p>kurosteel</p>
