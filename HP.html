@@ -7,30 +7,33 @@
     <link rel="stylesheet" href="./CSS.css">
 </head>
 <body>
-<header>
-<div class="topnav">
-    <a href="#top"> <img src="./Logo.png"></a>
-    <a href="#about">私たちについて</a>
-    <a href="services">サービス</a>
-    <a href="payment">お支払方法</a>
-    <a href="consultation">ご相談</a>
+    <header class="header">
 
-    <div class="contacts">
-        <p>営業時間 10:00~19:00</p>
-        <p>月曜定休</p>
-        <p>080-0123-4567</p>
+    <div class="header_logo">
+        <a href="#top"> <img src="./Logo.png" alt="logo"></a>
     </div>
-</div>
-</header>
+    <nav class="header=nav">
+        <ul>
+            <li><a href="#about">私たちについて</a></li>
+            <li><a href="services">サービス</a></li>
+            <li><a href="payment">お支払方法</a></li>
+            <li><a href="consultation">ご相談</a></li>
+        </ul>
+    </nav>
+        <div class="header_contacts">
+            <p>営業時間 <span>10:00~19:00</span><br/>月曜定休</p>
+            <a href="tel:0801234567">080-0123-4567</a>
+        </div>
+    </header>
 
 <main>
-    <div class="mainWords">
+    <div class="topcontent">
         <p>
             鍛えた<span class="highlight">技術で</span>、<br/>
             <span class="highlight">唯一無二</span>の一台を
         </p>
-        <p class="wordsAboutTeam">バイクの修理とカスタムを専門とするチーム</p>
-        <a href="">ご相談</a>
+        <p>バイクの修理とカスタムを専門とするチーム</p>
+        <a href="#" class="top_button">ご相談</a>
     </div>
 </main>
 
@@ -137,21 +140,23 @@
 
 <section>
     <h1>メンテナンス</h1>
-    <div>
-        <p>
-            当社はフルメンテナンスという,バイク全体の状態を総合的に点検、整備するサービスを提供しています。
-            エンジン、タイヤ、ブレーキ、チェーン、バッテリー灯火類などの主要部品を細かくチェックし、必要に
-            応じて調整、交換を行います。安全性、快適性、耐久性を維持するため定期的なフルメンテナンスを
-            おすすめします。
-        </p>
-        <h3>定期点検パック 6ヶ月〜12ヶ月</h3>
-        <p>¥8,000〜¥18,000</p>
-        <a href="#pricelist">詳しくはこちら</a>
+    <div class="container">
+        <div class="container_text">
+            <p>
+                当社はフルメンテナンスという、バイク全体の状態を総合的に点検、整備するサービスを提供しています。
+                エンジン、タイヤ、ブレーキ、チェーン、バッテリー灯火類などの主要部品を細かくチェックし、必要に
+                応じて調整、交換を行います。安全性、快適性、耐久性を維持するため定期的なフルメンテナンスを
+                おすすめします。
+            </p>
+            <h3>定期点検パック 6ヶ月〜12ヶ月</h3>
+            <p class="bigprice">¥8,000〜¥18,000</p>
+            <a href="#pricelist" class="button_pricepage">詳しくはこちら</a>
+        </div>
+        <img class="container_image" src="./maintenanceDetails.jpg" alt="maintenance scene">
     </div>
     <div>
-        <img src="./" alt="maintenance scene">
+        <a href="#googleform>" class="button_reservation">ご予約</a>
     </div>
-    <a href="#googleform>">ご予約</a>
 </section>
 
 <section>

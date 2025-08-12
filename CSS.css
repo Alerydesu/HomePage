@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 600px;
+    background-image: url(./blackbike.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.highlight {
+    color: #657A90;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: #141F30;
+    color: white;
+}
+
+.topcontent {
+    font-size: 48px;
+    padding-left: 70px;
+}
+
+p.wordsAboutTeam {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h3 {
+    color: #657A90;
+    font-size: 24px;
+}
+
+p.sectionDescription {
+    text-align: center;
+    max-width: 800px;
+    width: auto;
+    border: 1px dotted #C9D3DD;
+    font-size: 14;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 150px 500px 1fr;
+    grid-template-rows: auto auto auto;
+    padding-left: 70px;
+}
+
+.gridItem {
+    grid-column: 2;
+    text-align: left;
+}
+
+.gridItemIcon1 {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+}
+
+.gridItemIcon2 {
+    grid-row: 2;
+    grid-column: 3;
+    align-self: center;
+}
+.gridItemIcon3 {
+    grid-row: 3;
+    grid-column: 1;
+    align-self: center;
+}
+
+.featureIcon {
+    height: 80%;
+    width: 80%;
+}
+
+.container {
+    max-width: 800px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border: 1px dotted #C9D3DD;
+    padding: 30px;
+    align-items: stretch;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.container_text {
+    max-width: 420px;
+    text-align: left;
+    flex: 1;
+    font-size: 14px;
+}
+
+.container_image {
+    max-width: 380px;
+    width: auto;
+    height: auto;
+    align-self: stretch;
+    object-fit: cover;
+}
+
+.bigprice {
+    font-size: 30px;
+    font-weight: bold;
+    color: #E48F0D;
+}
+
+.button_pricepage {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E48F0D;
+    width: 215px;
+    height: 45px;
+
+}
+
+.button_reservation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #E48F0D;
+    width: 215px;
+    height: 45px;
+
+}
