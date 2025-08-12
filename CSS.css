@@ -1,37 +1,149 @@
 @charset "UTF-8";
 
+a {
+    text-decoration: none;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: #141F30;
+    color: white;
+}
+
+/*.header {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    background-color: black;
+    z-index: 10;
+}*/
+
+.header {
+    position: fixed;              
+    top: 0;                       
+    left: 0;
+    right: 0;
+
+    margin: 0 auto;
+    max-width: 1000px;            
+    width: 100%;                  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+
+    background-color: black;
+    z-index: 10;                
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header_logo img{
+    margin-left: 100px;
+    width: 100px;
+}
+
+.header_nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.header_nav a:hover{
+    color: #E48F0D;
+}
+
+.header_contacts {
+    margin-right: 100px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.header_contacts a{
+    display: inline-block;
+    margin-top: 6px;
+    text-decoration: none;
+}
+
 main {
     position: relative;
     display: flex;
     align-items: center;
-
-    max-width: 1200px;
+    justify-content: flex-start;
+    max-width: 1000px;
     margin: 0 auto;
-    min-height: 600px;
+    min-height: 650px;
     background-image: url(./blackbike.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: bottom center;
+    background-size: cover;
 
+}
+
+a {
+    color: white;
+}
+
+.companyPhrase {
+    font-size: 18px;
+}
+.button_top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E48F0D;
+    width: 215px;
+    height: 45px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.button_top:hover{
+    background: linear-gradient(to bottom, #3B4754, #657A90);
 }
 
 .highlight {
     color: #657A90;
 }
 
-* {
-    box-sizing: border-box;
-    background-color: #141F30;
-    color: white;
-}
-
 .topcontent {
+    text-align: left;
+    max-width: 800px;
+    width: auto;
     font-size: 48px;
-    padding-left: 70px;
+    margin-left: 100px;
+    line-height: 1.2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.topcontent p{
+    margin-bottom: 20px;
 }
 
 p.wordsAboutTeam {
     font-size: 18px;
+    margin-top: 0;
 }
 
 h1 {
@@ -123,7 +235,7 @@ p.sectionDescription {
     color: #E48F0D;
 }
 
-.button_pricepage {
+.button_border {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +245,7 @@ p.sectionDescription {
 
 }
 
-.button_reservation {
+.button_orange {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,5 +253,4 @@ p.sectionDescription {
     background-color: #E48F0D;
     width: 215px;
     height: 45px;
-
 }
