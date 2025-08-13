@@ -11,20 +11,6 @@ body {
     color: white;
 }
 
-/*.header {
-    margin: 0 auto;
-    padding: 0 40px;
-    width: auto;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    position: relative;
-    background-color: black;
-    z-index: 10;
-}*/
-
 .header {
     position: fixed;              
     top: 0;                       
@@ -42,7 +28,7 @@ body {
     font-size: 14px;
 
     background-color: black;
-    z-index: 10;                
+    z-index: 10;              
 }
 
 .header__inner {
@@ -56,6 +42,7 @@ body {
 
 .header_logo img{
     margin-left: 100px;
+    margin-right: 20px;
     width: 100px;
 }
 
@@ -76,6 +63,7 @@ body {
     text-align: right;
     font-size: 12px;
     line-height: 1.2;
+    margin-left: 20px;
 }
 
 .header_contacts a{
@@ -147,6 +135,7 @@ p.wordsAboutTeam {
 }
 
 h1 {
+    margin-top: 100px;
     font-size: 48px;
     text-align: center;
 }
@@ -162,44 +151,165 @@ p.sectionDescription {
     width: auto;
     border: 1px dotted #C9D3DD;
     font-size: 14;
-    padding: 30px;
+    padding: 40px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
 
-.features {
-    display: grid;
-    grid-template-columns: 150px 500px 1fr;
-    grid-template-rows: auto auto auto;
-    padding-left: 70px;
+/* 特徴 */
+.advantages {
+    max-width: 880px;
+    margin: 0 auto;
+    position: relative;
+    background: radial-gradient(#3B4754 0%, #141F30 50%);
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.gridItem {
-    grid-column: 2;
-    text-align: left;
+.step {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+.step_icon {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gridItemIcon1 {
-    grid-row: 1;
-    grid-column: 1;
-    align-self: center;
+.step_icon img{
+    max-width: 380px;
+    width: auto;
+    height: auto;
+    align-self: stretch;
+    object-fit: cover;
 }
 
-.gridItemIcon2 {
-    grid-row: 2;
-    grid-column: 3;
-    align-self: center;
-}
-.gridItemIcon3 {
-    grid-row: 3;
-    grid-column: 1;
-    align-self: center;
+.step_content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+
 }
 
-.featureIcon {
-    height: 80%;
-    width: 80%;
+.step_content.left {
+    flex-direction: row;
 }
+
+.step_content.right {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.step_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: #657A90;
+}
+
+.step_text {
+    line-height: 1.6;
+}
+/* 特徴 end*/
+
+
+/* サービスのご案内 */
+
+.services {
+    text-align: center;
+    background: radial-gradient(#3B4754 0%, #141F30 50%);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.services_wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+}
+
+.services_item {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto; 
+}
+
+.services_item img{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+}
+
+.services_item:hover img {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.services_item p {
+    position: relative;
+    color: #E48F0D;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+
+.services_item.center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services_item.left {
+    top: 190px;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.services_item.right {
+    top: 190px;
+    left: 90%;
+    transform: translateX(-50%);
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.services_icon.pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+/* サービスのご案内 end*/
+
+
+/* メンテナンス */
 
 .container {
     max-width: 800px;
@@ -254,3 +364,5 @@ p.sectionDescription {
     width: 215px;
     height: 45px;
 }
+
+/* メンテナンス end*/
