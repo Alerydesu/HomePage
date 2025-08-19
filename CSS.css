@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     scroll-behavior: smooth;
@@ -8,7 +12,7 @@ a {
 
 body {
     box-sizing: border-box;
-    background-color: #141F30;
+    background-color: black;
     color: white;
     
 }
@@ -20,7 +24,7 @@ body {
     right: 0;
 
     margin: 0 auto;
-    max-width: 1000px;            
+        
     width: 100%;                  
 
     display: flex;
@@ -34,23 +38,22 @@ body {
 }
 
 .header__inner {
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
 }
 
 .header_logo img{
-    margin-left: 100px;
-    margin-right: 20px;
-    width: 100px;
+    width: 70px;
 }
 
 .header_nav ul{
     display: flex;
-    gap: 40px;
+    gap: 80px;
     list-style: none;
     padding-left: 0;
 }
@@ -61,32 +64,28 @@ body {
 }
 
 .header_contacts {
-    margin-right: 100px;
     text-align: right;
     font-size: 12px;
-    line-height: 1.2;
-    margin-left: 20px;
 }
 
 .header_contacts a{
     display: inline-block;
-    margin-top: 6px;
     text-decoration: none;
 }
 
 main {
+    margin: 0 auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    max-width: 1000px;
-    margin: 0 auto;
-    min-height: 650px;
+    min-height: 100vh;
+    max-width: 1200px;
     background-image: url(./blackbike.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-
+    background-position: center;
+    background-size: 100%;
+    background-color: black;
 }
 
 a {
@@ -94,7 +93,8 @@ a {
 }
 
 .companyPhrase {
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 20px;
 }
 .button_top {
     margin-top: 40px;
@@ -118,17 +118,19 @@ a {
 
 .topcontent {
     text-align: left;
-    max-width: 800px;
+    max-width: 1200px;
+    padding: 0 20px;
     width: auto;
-    font-size: 48px;
-    margin-left: 100px;
+    font-size: 56px;
     line-height: 1.2;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .topcontent p{
+    margin-top: 0;
     margin-bottom: 0px;
 }
 
@@ -138,29 +140,44 @@ p.wordsAboutTeam {
 }
 
 h1 {
-    margin-top: 80px;
+    margin-top: 0;
     font-size: 48px;
     text-align: center;
 }
 
 h3 {
+    margin: 0 0;
     color: #657A90;
     font-size: 24px;
 }
 
 p.sectionDescription {
     text-align: center;
-    max-width: 800px;
+    max-width: 1200px;
     width: auto;
     border: 1px dotted #C9D3DD;
-    font-size: 14;
+    font-size: 14px;
     padding: 40px;
     margin: 0 auto;
 }
 
+/* 私たちについて */
+
+.about_us {
+    padding-top: 150px;
+    background: linear-gradient( #000000 0%,  #141F30 60%);
+}
+/* end*/
+
+
 /* 特徴 */
 .advantages {
-    max-width: 880px;
+    padding-top: 100px;
+    background-color: #141F30;
+}
+
+.advantages_inner {
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     background: radial-gradient(#3B4754 0%, #141F30 50%);
@@ -195,7 +212,7 @@ p.sectionDescription {
     display: flex;
     justify-content: center;
     gap: 40px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 
 }
@@ -226,6 +243,11 @@ p.sectionDescription {
 /* サービスのご案内 */
 
 .services {
+    padding-top: 150px;
+    background-color: #141F30;
+}
+
+.services_inner {
     text-align: center;
     background: radial-gradient(#3B4754 0%, #141F30 50%);
     background-size: 400px 400px;
@@ -237,7 +259,7 @@ p.sectionDescription {
     position: relative;
     width: 400px;
     height: 400px;
-    margin: 50px auto;
+    margin: 40px auto 0 auto;
 }
 
 .services_item {
@@ -249,7 +271,6 @@ p.sectionDescription {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 50px auto; 
 }
 
 .services_item img{
@@ -278,19 +299,19 @@ p.sectionDescription {
 }
 
 .services_item.center {
-    top: 0;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .services_item.left {
-    top: 190px;
+    top: 290px;
     left: 10%;
     transform: translateX(-50%);
 }
 
 .services_item.right {
-    top: 190px;
+    top: 290px;
     left: 90%;
     transform: translateX(-50%);
 }
@@ -299,16 +320,21 @@ p.sectionDescription {
 
 /*　修理　*/
 .repair {
+    background-color: #141F30;
+    padding: 150px 0;
+}
+
+.repair_inner {
     padding-top: 30px;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
     border: 1px dotted #C9D3DD;
 
 }
 
 .repair_subtext {
     text-align: center;
-    max-width: 800px;
+    max-width: 1200px;
     width: auto;
     font-size: 14;
     padding: 5px;
@@ -318,7 +344,7 @@ p.sectionDescription {
 .repair_grid {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
     justify-items: center;
     margin-top: 40px;
@@ -331,11 +357,11 @@ p.sectionDescription {
 
 .repair_card {
     width: 100%;
-    height: 130px;
-    max-width: 400px;
+    height: 200px;
+    max-width: 620px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -345,8 +371,8 @@ p.sectionDescription {
 }
 
 .repair_card img {
-    width: 115px;
-    height: 115px;
+    width: 170px;
+    height: 170px;
     object-fit: cover;
     flex-shrink: 0;
     border-radius: 50%;
@@ -354,8 +380,8 @@ p.sectionDescription {
 }
 
 .repair_text {
-    width: 200px;
-    height: 70px;
+    width: 300px;
+    height: 100px;
     margin-left: 30px;
     display: flex;
     flex-direction: column;
@@ -417,35 +443,51 @@ p.sectionDescription {
 
 /* メンテナンス */
 
+.maintenance {
+    background-color: #141F30;
+}
+
 .container {
-    max-width: 800px;
-    width: auto;
+    max-width: 1200px;
+    margin: 0 auto 50px;
     display: flex;
-    justify-content: space-between;
     gap: 30px;
     border: 1px dotted #C9D3DD;
-    padding: 30px;
-    align-items: stretch;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    padding: 20px;
+    align-items: flex-start;
 }
 
 .container_text {
-    max-width: 420px;
-    text-align: left;
     flex: 1;
+    max-width: 460px;
     font-size: 14px;
-}
-
-.container_image {
-    max-width: 380px;
-    width: auto;
-    height: auto;
-    align-self: stretch;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     object-fit: cover;
 }
 
+.container_text p {
+    margin: 0;
+}
+
+.maintenance_image {
+    flex: 1;
+    display: flex;
+    align-self: stretch;
+}
+
+.maintenance_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .bigprice {
+    margin: 0 0;
+    padding-bottom: 30px;
     font-size: 30px;
     font-weight: bold;
     color: #E48F0D;
@@ -476,7 +518,7 @@ p.sectionDescription {
 /* 支払方法 */
 .payment {
     border: 1px dotted #C9D3DD;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     background: radial-gradient(#3B4754 0%, #141F30 50%);
     background-size: 400px 400px;
@@ -487,7 +529,7 @@ p.sectionDescription {
 
 .payment_subtext {
     text-align: center;
-    max-width: 800px;
+    max-width: 1200px;
     width: auto;
     font-size: 14;
     padding: 40px;
@@ -507,7 +549,7 @@ p.sectionDescription {
 .payment_scroller {
     overflow: hidden;
     position: relative;
-    max-width: 880px;
+    max-width: 1200px;
     margin: 20px auto 50px;
 }
 
@@ -548,7 +590,7 @@ p.sectionDescription {
 
 .consultation_text {
     border: 1px dotted #C9D3DD;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 30px 0 50px;
     text-align: center;
@@ -581,7 +623,7 @@ p.sectionDescription {
 
 /* アクセス */
 .access_container {
-    max-width: 800px;
+    max-width: 1200px;
     min-height: 250px;
     width: auto;
     display: flex;
@@ -594,13 +636,19 @@ p.sectionDescription {
     margin-bottom: 50px;
 }
 
+.access_item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 .access_icon {
     width: 30px;
     height: auto;
+    flex-shrink: 0;
 }
 
 .access_text {
-    max-width: 230px;
+    max-width: 300px;
     text-align: left;
     flex: 1;
     font-size: 18px;
@@ -609,7 +657,7 @@ p.sectionDescription {
 }
 
 .access_map {
-    flex: 2; /* allow it to take more space */
+    flex: 1; /* allow it to take more space */
     align-self: stretch;
     display: flex;
 }
@@ -620,5 +668,33 @@ p.sectionDescription {
     border: 0;
 }
 
-
 /*　アクセス　end*/
+
+.footer {
+    margin: 0 auto;
+    padding: 10px 100px;
+    max-width: 1200px;            
+    width: 100%;                  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background: linear-gradient(#141F30 0%, #000000 60%);
+    z-index: 10;  
+}
+
+.footer_sns{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer_sns img {
+    width: 40px;
+}
+
+/*フッター*/
+
+
+
+/*フッタ end*/
