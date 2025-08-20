@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bike2</title>
+    <title>KuroSteel</title>
     <link rel="stylesheet" href="./CSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+    <script src="./JS.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -14,7 +18,7 @@
             </div>
             <nav class="header_nav">
                 <ul>
-                    <li><a href="#aboutUs">私たちについて</a></li>
+                    <li><a href="#about_us">私たちについて</a></li>
                     <li><a href="#services">サービス</a></li>
                     <li><a href="#payment">お支払方法</a></li>
                     <li><a href="#consultation">ご相談</a></li>
@@ -29,7 +33,7 @@
 
 <main>
     <div class="topcontent">
-        <p>
+        <p class="ibm-plex-sans-jp-semibold">
             鍛えた<span class="highlight">技術で</span>、<br/>
             <span class="highlight">唯一無二</span>の一台を
         </p>
@@ -38,14 +42,14 @@
     </div>
 </main>
 
-<section class="about_us" id="aboutUs">
+<section class="about_us" id="about_us">
     <h1>私たちについて</h1>
-    <p class="sectionDescription">
-        <span class="highlight">KuroSteel</span>は、その名が示す「黒い鋼」のように、強さ・信頼性・美しさを兼ね備えた
+    <div class="about_us_subtext">
+        <span class="highlight">KUROSTEEL</span>は、その名が示す「黒い鋼」のように、強さ・信頼性・美しさを兼ね備えた
         バイクづくりを理念としています。修理、カスタム、そして正確な診断を通じて、
         車両本来の性能を引き出しながら、お客様の目的や使用環境に最適な一台を提供します。
         外観だけでなく内部構造まで丁寧に対応し、安心して長く乗れる品質を追求しています。
-    </p>
+    </div>
 </section>
 
 <section class="advantages">
@@ -117,7 +121,7 @@
 </section>
 
 
-<section class="repair">
+<section class="repair" id="repair">
     <h1>修理</h1>
     <div class="repair_inner">
         <p class="repair_subtext">
@@ -161,151 +165,167 @@
     </div>
     <div class="repair_buttons">
         <a class="button_consultation" href="#consultation">ご相談</a>
-        <a class="button_details" href="#pricelist">詳しくはこちら</a>
+        <a class="button_details" href="ServicesTable.html">詳しくはこちら</a>
     </div>
 </section>
 
-<section class="maintenance">
-    <h1>メンテナンス</h1>
-    <div class="container">
-        <div class="container_text">
+<section class="maintenance" id="maintenance">
+    <div class="maintenance_inner">
+        <h1>メンテナンス</h1>
+        <div class="maintenance_container">
+            <div class="maintenance_subtext">
+                <div class="maintenance_text">
+                    <p>
+                        当社はフルメンテナンスという、バイク全体の状態を総合的に点検、整備するサービスを提供しています。
+                        エンジン、タイヤ、ブレーキ、チェーン、バッテリー灯火類などの主要部品を細かくチェックし、必要に
+                        応じて調整、交換を行います。安全性、快適性、耐久性を維持するため定期的なフルメンテナンスを
+                        おすすめします。
+                    </p>
+                    <h3>定期点検パック 6ヶ月〜12ヶ月</h3>
+                    <p class="bigprice">¥8,000〜¥18,000</p>
+                </div>
+                <div class="maintenance_button">
+                    <a href="ServicesTable.html" class="maintenance_button_details">詳しくはこちら</a>
+                </div>
+            </div>
+            <div class="maintenance_image">
+                <img src="./maintenanceDetails.jpg" alt="maintenance scene">
+            </div>
+        </div>
+        <div>
+            <a href="#googleform>" class="maintenance_button_reservation">ご予約</a>
+        </div>
+    </div>
+</section>
+
+<section class="custom" id="custom">
+    <div class="custom_inner">
+        <h1>カスタム</h1>
+        <div class="custom_subtext">
             <p>
-                当社はフルメンテナンスという、バイク全体の状態を総合的に点検、整備するサービスを提供しています。
-                エンジン、タイヤ、ブレーキ、チェーン、バッテリー灯火類などの主要部品を細かくチェックし、必要に
-                応じて調整、交換を行います。安全性、快適性、耐久性を維持するため定期的なフルメンテナンスを
-                おすすめします。
+                細かなパーツで個性を引き立てたい方も、バイクのスタイルを一新したい方も、<br/>
+                私たちにお任せください。 <span class="highlight">ライトやカラーリングの変更から、フルカスタムまで、</span>お客様の理想<br/>
+                を形にします。あなただけの一台を、プロの技術と丁寧な仕上がりで実現いたします。
             </p>
-            <h3>定期点検パック 6ヶ月〜12ヶ月</h3>
-            <p class="bigprice">¥8,000〜¥18,000</p>
-            <a href="#pricelist" class="button_border">詳しくはこちら</a>
         </div>
-        <div class="maintenance_image">
-            <img src="./maintenanceDetails.jpg" alt="maintenance scene">
+        <div class="custom_work_example">
+            <div class="compare">
+                <div class="before">
+                    <img src="./custom_before.png" alt="Before Custom">
+                </div>
+                <div class="after">
+                    <img src="./custom_after.png" alt="After Custom">
+                </div>
+                <input type="range" id="range" min="0" max="100" value="50">
+            </div>
         </div>
-    </div>
-    <div>
-        <a href="#googleform>" class="button_orange">ご予約</a>
+        <div class="custom_buttons">
+            <a href="#googleform" class="custom_button_consult">ご相談のご予約</a>
+            <a href="ServicesTable.html" class="custom_button_details">詳しくはこちら</a>
+        </div>
     </div>
 </section>
 
-<section>
-    <h1>カスタム</h1>
-    <p class="sectionDescription">
-        細かなパーツで個性を引き立てたい方も、バイクのスタイルを一新したい方も、<br/>
-        私たちにお任せください。 <span class="highlight">ライトやカラーリングの変更から、フルカスタムまで、</span>お客様の理想<br/>
-        を形にします。あなただけの一台を、プロの技術と丁寧な仕上がりで実現いたします。
-    </p>
-    <button type="button">before</button>
-    <div class="compare">
-        <p>作業の例</p>
-        <section class="before">
-            <img src="./" alt="voltyBeforeCustom">
-        </section>
-        <section class="after">
-            <img src="./" alt="voltyAfterCustom">
-        </section>
-        <input type="range" id="range">
-    </div>
-    <button type="button">after</button>
-    <a href="#googleform">ご相談のご予約</a>
-    <a href="#pricelist">詳しくはこちら</a>
-</section>
-
-<h1>支払方法</h1>
 <section class="payment" id="payment">
-    <p class="payment_subtext"><span class="highlight">下記の</span>のお支払方法をご利用いただけます。</p>
-    <div class="payment_scroller">
-        <div class="payment_grid">
-            <img src="./genkin.png" alt="">
-            <img src="./Visa.png" alt="">
-            <img src="./JCB.png" alt="">
-            <img src="./americanExpress.png" alt="">
-            <img src="./MasterCard.png" alt="">
-            <img src="./ApplePay.png" alt="">
-            <img src="./Pasmo.png" alt="">
-            <img src="./Suica.png" alt="">
-            <img src="./Mercary.png" alt="">
-            <img src="./PayPay.png" alt="">
-            <img src="./RPay.png" alt="">
-            <img src="./dHarai.png" alt="">
-            
-            <img src="./genkin.png" alt="">
-            <img src="./Visa.png" alt="">
-            <img src="./JCB.png" alt="">
-            <img src="./americanExpress.png" alt="">
-            <img src="./MasterCard.png" alt="">
-            <img src="./ApplePay.png" alt="">
-            <img src="./Pasmo.png" alt="">
-            <img src="./Suica.png" alt="">
-            <img src="./Mercary.png" alt="">
-            <img src="./PayPay.png" alt="">
-            <img src="./RPay.png" alt="">
-            <img src="./dHarai.png" alt="">
+    <h1>支払方法</h1>
+    <div class="payment_inner">
+        <p class="payment_subtext"><span class="highlight">下記の</span>のお支払方法をご利用いただけます。</p>
+        <div class="payment_scroller">
+            <div class="payment_grid">
+                <img src="./genkin.png" alt="">
+                <img src="./Visa.png" alt="">
+                <img src="./JCB.png" alt="">
+                <img src="./americanExpress.png" alt="">
+                <img src="./MasterCard.png" alt="">
+                <img src="./ApplePay.png" alt="">
+                <img src="./Pasmo.png" alt="">
+                <img src="./Suica.png" alt="">
+                <img src="./Mercary.png" alt="">
+                <img src="./PayPay.png" alt="">
+                <img src="./RPay.png" alt="">
+                <img src="./dHarai.png" alt="">
+                
+                <img src="./genkin.png" alt="">
+                <img src="./Visa.png" alt="">
+                <img src="./JCB.png" alt="">
+                <img src="./americanExpress.png" alt="">
+                <img src="./MasterCard.png" alt="">
+                <img src="./ApplePay.png" alt="">
+                <img src="./Pasmo.png" alt="">
+                <img src="./Suica.png" alt="">
+                <img src="./Mercary.png" alt="">
+                <img src="./PayPay.png" alt="">
+                <img src="./RPay.png" alt="">
+                <img src="./dHarai.png" alt="">
+            </div>
         </div>
-    </div>
-    <div class="payment_methods">
-        <p>
-            <span class="boldtext">クレジットカード:</span> VISA, MASTER, AMEX, JCB</br>
-            <span class="boldtext">QRコード決済:</span>  PayPay, 楽天Pay, d払い, メルPay</br>
-            <span class="boldtext">交通系電子マネー:</span>  suica, pasmo</br>
-            <span class="boldtext">タッチ決済:</span>  ApplePay</br>
-            <span class="boldtext">現金
-        </p>
+        <div class="payment_methods">
+            <p>
+                <span class="boldtext">クレジットカード:</span> VISA, MASTER, AMEX, JCB<br/>
+                <span class="boldtext">QRコード決済:</span>  PayPay, 楽天Pay, d払い, メルPay<br/>
+                <span class="boldtext">交通系電子マネー:</span>  suica, pasmo<br/>
+                <span class="boldtext">タッチ決済:</span>  ApplePay<br/>
+                <span class="boldtext">現金</span>
+            </p>
+        </div>
     </div>
 </section>
 
 
 <section class="consultation" id="consultation">
     <h1>お問い合わせ</h1>
-    <div class="consultation_text">
-        <p>
-            お急ぎの方は下記の電話番号からご連絡ください。<br/>
-            営業時間 10:00〜19:00 月曜定休
-        </p>
-        <p class="telephone">080-0123-4567</p>
+    <div class="consultation_inner">
+        <div class="consultation_text">
+            <p>
+                お急ぎの方は下記の電話番号からご連絡ください。<br/>
+                営業時間 10:00〜19:00 月曜定休
+            </p>
+            <p class="telephone">080-0123-4567</p>
+        </div>
+        <a class="consultation_button" href="#googleform">お問い合わせする</a>
     </div>
-    <a class="consultation_button" href="#googleform">お問い合わせする</a>
 </section>
 
 <section class="access">
-    <h1>アクセス</h1>
-    <div class="access_container">
-        <div class="access_text">
-            <div class="access_item">
-                <img class="access_icon" src="./location-pin.png" alt="">
-                <p>〒980-0871</br>仙台市青葉区八幡5丁目2-1</p>
+    <div class="acces_inner">
+        <h1>アクセス</h1>
+        <div class="access_container">
+            <div class="access_text">
+                <div class="access_item">
+                    <img class="access_icon" src="./location-pin.png" alt="">
+                    <p>〒980-0871</br>仙台市青葉区八幡5丁目2-1</p>
+                </div>
+                <div class="access_item">
+                    <img class="access_icon" src="./email.png" alt="">
+                    <p>info@kurosteel.jp</p>
+                </div>
+                <div class="access_item">
+                    <img class="access_icon" src="./smartphone-call.png" alt="">
+                    <p>080-0123-4567</p>
+                </div>
             </div>
-            <div class="access_item">
-                <img class="access_icon" src="./email.png" alt="">
-                <p>info@kurosteel.jp</p>
+            <div class="access_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.4191014298026!2d140.8406610757174!3d38.26977667186489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a29b623cd06d3%3A0xe6d49fd6b8faf649!2s5-ch%C5%8Dme-2-1%20Hachiman%2C%20Aoba%20Ward%2C%20Sendai%2C%20Miyagi%20980-0871!5e0!3m2!1sru!2sjp!4v1754620636513!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="access_item">
-                <img class="access_icon" src="./smartphone-call.png" alt="">
-                <p>080-0123-4567</p>
-            </div>
-        </div>
-        <div class="access_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.4191014298026!2d140.8406610757174!3d38.26977667186489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a29b623cd06d3%3A0xe6d49fd6b8faf649!2s5-ch%C5%8Dme-2-1%20Hachiman%2C%20Aoba%20Ward%2C%20Sendai%2C%20Miyagi%20980-0871!5e0!3m2!1sru!2sjp!4v1754620636513!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-</section>
-
-<section>
-    <img src="./" alt="TOP">
 </section>
 
 <footer>
-    <div class="footer">
-        <div class="footer_sns">
-            <a href=""><img src="./line.png" alt="line" ></a>
-            <a href=""><img src="./twitter.png" alt="twitter" ></a>
-            <a href=""><img src="./instagram.png" alt="insta" ></a>
-            <a href=""><img src="./youtube.png" alt="youtube" ></a>
-        </div>
-        <div class="footer_kurosteel">
-            <p> KUROSTEEL(c)</p>
+    <div class="footer_wrap">
+        <div class="footer_inner">
+            <div class="footer_sns">
+                <a href=""><img src="./line.png" alt="line" ></a>
+                <a href=""><img src="./twitter.png" alt="twitter" ></a>
+                <a href=""><img src="./instagram.png" alt="insta" ></a>
+                <a href=""><img src="./youtube.png" alt="youtube" ></a>
+            </div>
+            <div class="footer_kurosteel">
+                <p> KUROSTEEL(c)</p>
+            </div>
         </div>
     </div>
 </footer>
+    <button id="scroll_top_btn" title="Go to top">▲</button>
 </body>
 </html>

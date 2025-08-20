@@ -2,11 +2,23 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
-    scroll-behavior: smooth;
+}
+
+.ibm-plex-sans-jp-regular {
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-sans-jp-semibold {
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 
@@ -22,17 +34,12 @@ body {
     top: 0;                       
     left: 0;
     right: 0;
-
     margin: 0 auto;
-        
     width: 100%;                  
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 14px;
-
+    font-size: 16px;
     background-color: black;
     z-index: 10;              
 }
@@ -48,7 +55,7 @@ body {
 }
 
 .header_logo img{
-    width: 70px;
+    width: 90px;
 }
 
 .header_nav ul{
@@ -65,7 +72,7 @@ body {
 
 .header_contacts {
     text-align: right;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .header_contacts a{
@@ -102,7 +109,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #E48F0D;
-    width: 215px;
+    width: 270px;
     height: 45px;
     font-size: 16px;
     transition: background 0.3s ease;
@@ -114,6 +121,7 @@ a {
 
 .highlight {
     color: #657A90;
+    font-weight: bold;
 }
 
 .topcontent {
@@ -121,7 +129,7 @@ a {
     max-width: 1200px;
     padding: 0 20px;
     width: auto;
-    font-size: 56px;
+    font-size: 70px;
     line-height: 1.2;
 
     display: flex;
@@ -141,14 +149,14 @@ p.wordsAboutTeam {
 
 h1 {
     margin-top: 0;
-    font-size: 48px;
+    font-size: 60px;
     text-align: center;
 }
 
 h3 {
     margin: 0 0;
     color: #657A90;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 p.sectionDescription {
@@ -156,7 +164,7 @@ p.sectionDescription {
     max-width: 1200px;
     width: auto;
     border: 1px dotted #C9D3DD;
-    font-size: 14px;
+    font-size: 16px;
     padding: 40px;
     margin: 0 auto;
 }
@@ -166,6 +174,15 @@ p.sectionDescription {
 .about_us {
     padding-top: 150px;
     background: linear-gradient( #000000 0%,  #141F30 60%);
+}
+
+.about_us_subtext {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 125px;
+    font-size: 16px;
+    border: 1px dotted #C9D3DD;
 }
 /* end*/
 
@@ -249,8 +266,8 @@ p.sectionDescription {
 
 .services_inner {
     text-align: center;
-    background: radial-gradient(#3B4754 0%, #141F30 50%);
-    background-size: 400px 400px;
+    background: radial-gradient(#3B4754 0%, #141F30 75%);
+    background-size: 350px 350px;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
@@ -259,13 +276,13 @@ p.sectionDescription {
     position: relative;
     width: 400px;
     height: 400px;
-    margin: 40px auto 0 auto;
+    margin: 0 auto;
 }
 
 .services_item {
     position: absolute;
-    width: 200px;
-    height: 170px;
+    width: 215px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -277,8 +294,8 @@ p.sectionDescription {
     position: absolute;
     top: 22%;
     left: 50%;
-    width: 170px;
-    height: 170px;
+    width: 195px;
+    height: 195px;
     object-fit: contain;
     transform: translate(-50%, -50%);
     transition: transform 0.5s ease;
@@ -292,14 +309,14 @@ p.sectionDescription {
     position: relative;
     color: #E48F0D;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 35px;
     text-align: center;
     z-index: 2;
     transition: transform 0.5s ease;
 }
 
 .services_item.center {
-    top: 100px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -327,8 +344,12 @@ p.sectionDescription {
 .repair_inner {
     padding-top: 30px;
     max-width: 1200px;
-    margin: 100px auto 0 auto;
+    margin: 50px auto 0 auto;
     border: 1px dotted #C9D3DD;
+    background: radial-gradient(#3B4754 0%, #141F30 40%);
+    background-size: 900px 900px;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -336,7 +357,7 @@ p.sectionDescription {
     text-align: center;
     max-width: 1200px;
     width: auto;
-    font-size: 14;
+    font-size: 16px;
     padding: 5px;
     margin: 0 auto;
 }
@@ -349,10 +370,6 @@ p.sectionDescription {
     justify-items: center;
     margin-top: 40px;
     margin-bottom: 60px;
-    background: radial-gradient(#3B4754 0%, #141F30 50%);
-    background-size: 410px 410px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .repair_card {
@@ -387,7 +404,7 @@ p.sectionDescription {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    font-size: 18px; 
+    font-size: 20px; 
     text-align: center; 
     font-weight: bold;   
     line-height: 1.4;
@@ -410,7 +427,7 @@ p.sectionDescription {
     align-items: center;
     justify-content: center;
     background-color: #E48F0D;
-    width: 215px;
+    width: 270px;
     height: 45px;
     font-size: 16px;
     transition: background 0.3s ease;
@@ -425,7 +442,7 @@ p.sectionDescription {
     align-items: center;
     justify-content: center;
     border: 1px solid #E48F0D;
-    width: 215px;
+    width: 270px;
     height: 45px;
     transition: background 0.3s ease;
 }
@@ -447,29 +464,44 @@ p.sectionDescription {
     background-color: #141F30;
 }
 
-.container {
+.maintenance_inner {
+    background: radial-gradient(#3B4754 0%, #141F30 35%);
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.maintenance_container {
     max-width: 1200px;
-    margin: 0 auto 50px;
-    display: flex;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+    flex-direction: column;
     gap: 30px;
     border: 1px dotted #C9D3DD;
     padding: 20px;
-    align-items: flex-start;
+    align-items: stretch;
+    margin: 0 auto 50px auto;
 }
 
-.container_text {
+.maintenance_subtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.maintenance_text {
     flex: 1;
-    max-width: 460px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    object-fit: cover;
 }
 
-.container_text p {
+.maintenance_text p {
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .maintenance_image {
@@ -481,42 +513,177 @@ p.sectionDescription {
 .maintenance_image img {
     width: 100%;
     height: 100%;
+    border: 0;
     object-fit: cover;
-    display: block;
 }
 
 .bigprice {
     margin: 0 0;
     padding-bottom: 30px;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     color: #E48F0D;
 }
 
-.button_border {
-    display: inline-flex;
+.maintenance_button_details {
+    display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #E48F0D;
-    width: 215px;
+    width: 270px;
     height: 45px;
 }
 
-.button_orange {
+.maintenance_button_details:hover {
+    border: 1px solid white;
+    color: #E48F0D;
+}
+
+
+.maintenance_button_reservation {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     background-color: #E48F0D;
-    width: 215px;
+    width: 270px;
     height: 45px;
+}
+
+.maintenance_button_reservation:hover {
+    background: linear-gradient(to bottom, #3B4754, #657A90);
 }
 
 /* メンテナンス end*/
 
+/*カスタム*/
+.custom {
+    padding-top: 150px;
+    background-color: #141F30;
+}
+
+.custom_inner {
+    background: radial-gradient(#3B4754 0%, #141F30 50%);
+    background-size: 800px 800px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.custom_subtext {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 14px;
+    border: 1px dotted #C9D3DD;
+    margin-bottom: 50px;
+}
+
+.custom_work_example {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px dotted #C9D3DD;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.compare {
+    display: grid;
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    }
+.compare > * {
+    grid-area: 1 / 1;
+}
+.before, .after {
+    display: flex;
+}
+.before {
+    mask: linear-gradient(to right, #000 0%, var(--pos, 50%), #0000 0%);
+}
+.after {
+    mask: linear-gradient(to right, #0000 0%, var(--pos, 50%), #000 0%);
+}
+.before img, .after img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: black;
+}
+
+.compare input[type="range"] {
+    z-index: 1;
+    appearance: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    cursor: ew-resize;
+}
+.compare input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 40px;
+    background: #E48F0D;
+    border-radius: 6px;
+    cursor: ew-resize;
+    border: none;
+    margin-top: -15px;
+}
+.compare input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 40px;
+    background: #E48F0D;
+    border-radius: 6px;
+    cursor: ew-resize;
+    border: none;
+}
+
+.custom_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.custom_button_consult,
+.custom_button_details {
+    width: 270px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_button_consult {
+    background-color: #E48F0D;
+}
+
+.custom_button_consult:hover {
+    background: linear-gradient(to bottom, #3B4754, #657A90);
+}
+
+.custom_button_details {
+    border: 1px solid #E48F0D;
+}
+
+.custom_button_details:hover {
+    border: 1px solid white;
+    color: #E48F0D;
+}
+
+/*カスタム　end*/
+
 
 /* 支払方法 */
 .payment {
+    padding-top: 150px;
+    background-color: #141F30;
+}
+
+.payment_inner {
     border: 1px dotted #C9D3DD;
     max-width: 1200px;
     margin: 0 auto;
@@ -580,8 +747,12 @@ p.sectionDescription {
 
 
 /*　お問合せ　*/
-
 .consultation {
+    padding-top: 150px;
+    background-color: #141F30;
+}
+
+.consultation_inner {
     background: radial-gradient(#3B4754 0%, #141F30 50%);
     background-size: 500px 500px;
     background-repeat: no-repeat;
@@ -608,7 +779,7 @@ p.sectionDescription {
     align-items: center;
     justify-content: center;
     margin: 50px auto 0;
-    width: 215px;
+    width: 270px;
     height: 45px;
     border: 1px solid #E48F0D;
 }
@@ -622,6 +793,18 @@ p.sectionDescription {
 
 
 /* アクセス */
+.access {
+    padding-top: 150px;
+    background-color: #141F30;
+}
+
+.acces_inner {
+    background: radial-gradient(#3B4754 0%, #141F30 55%);
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .access_container {
     max-width: 1200px;
     min-height: 250px;
@@ -633,7 +816,6 @@ p.sectionDescription {
     padding: 20px;
     align-items: stretch;
     margin: 0 auto;
-    margin-bottom: 50px;
 }
 
 .access_item {
@@ -657,7 +839,7 @@ p.sectionDescription {
 }
 
 .access_map {
-    flex: 1; /* allow it to take more space */
+    flex: 1; 
     align-self: stretch;
     display: flex;
 }
@@ -670,16 +852,23 @@ p.sectionDescription {
 
 /*　アクセス　end*/
 
-.footer {
+
+/*フッター*/
+.footer_wrap {
+    padding-top: 150px;
+    background: linear-gradient(#141F30 0%, #000000 70%);
+}
+
+.footer_inner {
     margin: 0 auto;
-    padding: 10px 100px;
+    padding: 10px 20px;
     max-width: 1200px;            
-    width: 100%;                  
+    width: 100%; 
+    height: 200px;                 
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    background: linear-gradient(#141F30 0%, #000000 60%);
     z-index: 10;  
 }
 
@@ -693,8 +882,127 @@ p.sectionDescription {
     width: 40px;
 }
 
-/*フッター*/
-
-
-
 /*フッタ end*/
+
+/*　スクロール　*/
+#scroll_top_btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #E48F0D;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+  display: none; 
+}
+
+#scroll_top_btn:hover {
+  opacity: 1;
+}
+/*　スクロール　end*/
+
+
+
+
+/* サービスの一覧表　*/
+
+.table {
+    padding-top: 150px;
+    background-color: #141F30;
+}
+
+.table_inner {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.pricing {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.bike-size {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bike-size label {
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.bike-size input[type="radio"] {
+  margin-left: 8px;
+  accent-color: #657A90;
+}
+
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: none;
+  border: 1px dotted #657A90;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.tab.active {
+  border: 2px solid #657A90;
+}
+
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.service-table thead th {
+  border-bottom: 2px solid #ccc;
+  color:  #657A90;
+  text-align: left;
+  padding: 10px;
+}
+
+.service-table tbody td {
+  border-bottom: 1px dotted #aaa;
+  padding: 10px;
+}
+
+.pricing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 200px;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn.orange {
+  background-color:  #E48F0D;
+}
+
+.btn.border {
+  border: 1px solid  #E48F0D;
+}
+
+/* サービスの一覧表　end*/
