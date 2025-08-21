@@ -33,40 +33,39 @@
 
     <section class="table">
         <div class="table_inner">
-            <h1>サービスの一覧表</h1>
+            <h1>サービス一覧表</h1>
+            <div class="table_description">
+                <p>
+                    下記の当店のサービス一覧表を掲載しております。<br/>
+                    <span class="highlight">排気量</span>と<span class="highlight">サービス内容</span>を選びいただくと、該当するサービスをご覧いただけます。
+                </p>
+            </div>
             <div class="pricing">
-                <!-- Bike Size Radio Buttons -->
                 <div class="bike-size">
-                <label><input type="radio" name="size" value="small"> 小型</label>
-                <label><input type="radio" name="size" value="medium" checked> 中型</label>
-                <label><input type="radio" name="size" value="large"> 大型</label>
+                    <label><input type="radio" name="size" value="small"> 小型</label>
+                    <label><input type="radio" name="size" value="medium" checked> 中型</label>
+                    <label><input type="radio" name="size" value="large"> 大型</label>
                 </div>
 
-                <!-- Category Buttons -->
                 <div class="category-tabs">
-                <button class="tab active" data-category="repair">修理</button>
-                <button class="tab" data-category="custom">カスタム</button>
-                <button class="tab" data-category="maintenance">メンテナンス</button>
+                    <button class="tab active" data-category="repair">修理</button>
+                    <button class="tab" data-category="custom">カスタム</button>
+                    <button class="tab" data-category="maintenance">メンテナンス</button>
                 </div>
 
-                <!-- Service Table -->
                 <table class="service-table">
-                <thead>
-                    <tr>
-                    <th>排気量</th>
-                    <th>サービス</th>
-                    <th>料金</th>
-                    </tr>
-                </thead>
-                <tbody id="service-body">
-                    <!-- Filled dynamically by JS -->
-                </tbody>
+                    <thead>
+                        <tr>
+                        <th>排気量</th>
+                        <th>サービス</th>
+                        <th>料金</th>
+                        </tr>
+                    </thead>
+                    <tbody id="service-body">
+                    </tbody>
                 </table>
-
-                <!-- Action Buttons -->
                 <div class="pricing-buttons">
-                <a href="#consult" class="btn orange">ご相談</a>
-                <a href="#reserve" class="btn border">ご予約</a>
+                    <a href="HP.html#consultation" class="btn orange">ご相談</a>
                 </div>
             </div>
         </div>
@@ -87,6 +86,7 @@
             </div>
         </div>
     </footer>
-        <button id="scroll_top_btn" title="Go to top">▲</button>
+    
+    <button id="scroll_top_btn" title="Go to top">▲</button>
 </body>
 </html>

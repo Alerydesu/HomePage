@@ -26,7 +26,6 @@ body {
     box-sizing: border-box;
     background-color: black;
     color: white;
-    
 }
 
 .header {
@@ -60,9 +59,11 @@ body {
 
 .header_nav ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     list-style: none;
-    padding-left: 0;
+    padding: 0 20px;
+    justify-content: center;
 }
 
 
@@ -73,6 +74,11 @@ body {
 .header_contacts {
     text-align: right;
     font-size: 14px;
+    min-width: fit-content;
+}
+
+.header_contacts p {
+    margin: 0 auto 5px auto;
 }
 
 .header_contacts a{
@@ -85,13 +91,12 @@ main {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
+    min-height: 115vh;
     max-width: 1200px;
     background-image: url(./blackbike.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 110%;
     background-color: black;
 }
 
@@ -159,16 +164,6 @@ h3 {
     font-size: 32px;
 }
 
-p.sectionDescription {
-    text-align: center;
-    max-width: 1200px;
-    width: auto;
-    border: 1px dotted #C9D3DD;
-    font-size: 16px;
-    padding: 40px;
-    margin: 0 auto;
-}
-
 /* 私たちについて */
 
 .about_us {
@@ -231,6 +226,7 @@ p.sectionDescription {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: end;
 
 }
 
@@ -262,6 +258,7 @@ p.sectionDescription {
 .services {
     padding-top: 150px;
     background-color: #141F30;
+    position: relative;
 }
 
 .services_inner {
@@ -277,6 +274,15 @@ p.sectionDescription {
     width: 400px;
     height: 400px;
     margin: 0 auto;
+    z-index: 1;
+}
+
+svg {
+    margin: 0 auto;
+    z-index: 0;
+    position: absolute;
+    top: -66px;
+    right: -6px;
 }
 
 .services_item {
@@ -574,7 +580,7 @@ p.sectionDescription {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px dotted #C9D3DD;
     margin-bottom: 50px;
 }
@@ -698,7 +704,7 @@ p.sectionDescription {
     text-align: center;
     max-width: 1200px;
     width: auto;
-    font-size: 14;
+    font-size: 16px;
     padding: 40px;
     margin: 0 auto;
 }
@@ -855,7 +861,7 @@ p.sectionDescription {
 
 /*フッター*/
 .footer_wrap {
-    padding-top: 150px;
+    padding-top: 100px;
     background: linear-gradient(#141F30 0%, #000000 70%);
 }
 
@@ -868,7 +874,7 @@ p.sectionDescription {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
     z-index: 10;  
 }
 
@@ -886,29 +892,28 @@ p.sectionDescription {
 
 /*　スクロール　*/
 #scroll_top_btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  background-color: #E48F0D;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-  z-index: 9999;
-  display: none; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color:#657A90 ;
+    color: #141F30;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    display: none; 
 }
 
 #scroll_top_btn:hover {
-  opacity: 1;
+    opacity: 1;
 }
 /*　スクロール　end*/
-
 
 
 
@@ -924,85 +929,177 @@ p.sectionDescription {
     padding: 20px;
 }
 
+.table_description {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 125px;
+    font-size: 16px;
+    border: 1px dotted #C9D3DD;
+}
+
 .pricing {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
 .bike-size {
-  text-align: center;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .bike-size label {
-  margin: 0 20px;
-  font-size: 18px;
+    margin: 0 20px;
+    font-size: 18px;
 }
 
 .bike-size input[type="radio"] {
-  margin-left: 8px;
-  accent-color: #657A90;
+    margin-left: 8px;
+    accent-color: #657A90;
 }
 
 .category-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .tab {
-  background: none;
-  border: 1px dotted #657A90;
-  color: white;
-  padding: 10px 30px;
-  cursor: pointer;
+    flex: 1;
+    min-width: 100px;
+    background: none;
+    border: 1px dotted #657A90;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
 }
 
 .tab.active {
-  border: 2px solid #657A90;
+    border: 2px solid #657A90;
 }
 
 .service-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 .service-table thead th {
-  border-bottom: 2px solid #ccc;
-  color:  #657A90;
-  text-align: left;
-  padding: 10px;
+    border-bottom: 2px solid #ccc;
+    color:  #657A90;
+    text-align: left;
+    padding: 10px;
 }
 
 .service-table tbody td {
-  border-bottom: 1px dotted #aaa;
-  padding: 10px;
+    border-bottom: 1px dotted #aaa;
+    padding: 10px;
 }
 
 .pricing-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .btn {
-  width: 200px;
-  text-align: center;
-  padding: 12px 0;
-  font-size: 18px;
-  text-decoration: none;
-  color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 100px;
+    transition: background 0.3s ease;
 }
 
 .btn.orange {
-  background-color:  #E48F0D;
+    background-color:  #E48F0D;
 }
 
-.btn.border {
-  border: 1px solid  #E48F0D;
+.btn.orange:hover {
+    background: linear-gradient(to bottom, #3B4754, #657A90);
 }
 
 /* サービスの一覧表　end*/
+
+@media (max-width: 768px) {
+
+h1 {
+    font-size: 48px;
+}
+
+.header_nav {
+    font-size: 14px;
+}
+
+.header_nav ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.header_contacts {
+    text-align: right;
+}
+
+.topcontent {
+    font-size: 48px;
+}
+
+.companyPhrase {
+    font-size: 16px;
+}
+
+.about_us_subtext {
+    padding: 40px 35px;
+}
+
+.step_title {
+    font-size: 20px;
+}
+
+.services_wrapper img{
+    width: 185px;
+    height: 185px;
+}
+
+.services_item.center {
+    top: 80px;
+}
+
+.services_item.left {
+    left: 20%;
+}
+
+.services_item.right {
+    left: 80%;
+}
+
+.maintenance_container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.bigprice {
+    font-size: 33px;
+}
+
+.access_container{
+    flex-direction: column;
+}
+
+.access_text p {
+    margin: 0;
+    padding-top: 10px;
+}
+}
