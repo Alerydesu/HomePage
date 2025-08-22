@@ -291,9 +291,49 @@
                 </p>
                 <p class="telephone">080-0123-4567</p>
                 <p>営業時間 10:00〜19:00 月曜定休</p>
+                <a class="consultation_button" href="https://calendar.app.google/8sgn9dZ5XMUBCPMS7">ご相談のご予約</a>
+                <br><br><p>下記のフォームにご記入いただければ、追ってご連絡いたします。</p>
             </div>
-            <a class="consultation_button" href="https://calendar.app.google/8sgn9dZ5XMUBCPMS7">ご相談のご予約</a>
+            <div class="consultform">
+                <form action="https://formsubmit.co/alerydesu@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://あなたのサイト.com/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form_questiontype">
+                        <label for="qtype">ご質問の種類:</label>
+                        <select name="qtype" id="qtype" required>
+                            <option value="">-- 選択してください --</option>
+                            <option value="repair">修理</option>
+                            <option value="custom">カスタム</option>
+                            <option value="maintenance">maintenance</option> 
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form_group">
+                        <label>お名前：</label>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label>電話番号：</label>
+                        <input type="tel" name="telephone" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label>メールアドレス：</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label>お問い合わせ内容：</label>
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button class="consultform_button" type="submit">送信</button>
+                </form>
+            </div>
         </div>
+
     </section>
 
     <section class="access">
